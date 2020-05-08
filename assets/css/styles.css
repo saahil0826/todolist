@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'GoogleSans-Bold';
+  src: url(./fonts/GoogleSans-Bold.ttf) format('truetype');
+}
+
+,
+@font-face {
+  font-family: 'GoogleSans-Regular';
+  src: url(./fonts/GoogleSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'GoogleSans-Medium';
+  src: url(./fonts/GoogleSans-Medium.ttf) format('truetype');
+}
+
+body {
+  background: linear-gradient(270deg, #1db954, #4267b2, #36c5f0, #2eb67d);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+.container {
+  width: 360px;
+  margin: 100px auto;
+  background: #f7f7f7;
+}
+
+.selected {
+  color: grey;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+h1 {
+  background: #2980d9;
+  color: white;
+  padding: 10px 20px;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "GoogleSans-Medium";
+}
+
+h1 img {
+  margin: 0 auto;
+  margin-left: 150px;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  font-family: "GoogleSans-Regular";
+}
+
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+
+span img {
+  margin-right: 40px;
+  margin-left: 10px;
+  display: inline-block;
+  width: 0;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span img {
+  width: 20px;
+  opacity: 1.0;
+}
+
+input {
+  font-size: 18px;
+  color: #2980d9;
+  background: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  background: white;
+  outline: none;
+}
